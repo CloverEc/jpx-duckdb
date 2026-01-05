@@ -1044,13 +1044,13 @@ BACKOFF_FACTOR=2
 
 ## Usage Examples
 
-### Initial Load (5 years)
+### Initial Load (10 years)
 
 ```python
 from src.sync.initial import InitialLoader
 
 loader = InitialLoader()
-await loader.load_all(years=5)
+await loader.load_all(years=10)
 ```
 
 ### Daily Sync
