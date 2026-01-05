@@ -4,7 +4,7 @@ J-Quants API data storage with DuckDB - Japanese stock market data for analysis,
 
 ## Features
 
-- Fetch and store 5 years of Japanese stock market data
+- Fetch and store 10 years of Japanese stock market data
 - 13 J-Quants API v2 endpoints (Standard Plan)
 - DuckDB for fast analytical queries
 - Daily/Weekly automatic synchronization
@@ -45,8 +45,8 @@ cp .env.example .env
 # Initialize database
 python scripts/init_db.py
 
-# Run initial sync (5 years)
-python scripts/sync_all.py --initial --years 5
+# Run initial sync (10 years)
+python scripts/sync_all.py --initial --years 10
 
 # Run daily sync
 python scripts/sync_all.py --daily
